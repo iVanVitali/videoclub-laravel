@@ -24,8 +24,6 @@ class PeliculaController extends Controller
         $peliculas = $this->pelicula->obtenerTodasPeliculas();
         // Mostrar la lista de todos los miembros
 
-        dd($peliculas);
-
         return view('pelicula.index')->with('peliculas', $peliculas);
     }
 
