@@ -1,10 +1,29 @@
 # VideoClub
 
 Proyecto realizado para guardar las peliculas y su genero en la base de datos.
-El objetivo principal es practicar los principios de SOLID y conceptos tales como Repositorio, Inyeccion de Dependencias, Contenedor y etc...
+El objetivo principal es practicar los principios de SOLID y conceptos tales como el uso del Patron de Repositorio, Inyeccion de Dependencias, Contenedor y etc...
 
+### Tecnologias utilizadas
+  
+  - laravel 5.4
 
+### Objetivo
 
+ - Utiliar los principios de SOLID
+ - Utilizar el contenedor de Laravel para hacer el uso de Inversion del Control(IoC) y de Inyeccion de Dependencias.
+ 
+ 
+## Instalacion
+
+  1. Descargar el proyecto
+  
+    git clone https://github.com/iVanVitali/videoclub-laravel.git
+ 
+  2. Instalar los paquetes de dependencia
+  
+    composer install
+    
+ 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
