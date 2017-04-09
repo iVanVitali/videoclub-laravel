@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use VideoClub\Repo\PeliculaInterface;
+use VideoClub\Repo\Pelicula\PeliculaInterface;
 
 class PeliculaController extends Controller
 {
@@ -23,6 +23,9 @@ class PeliculaController extends Controller
     {
         $peliculas = $this->pelicula->obtenerTodasPeliculas();
         // Mostrar la lista de todos los miembros
+
+        dd($peliculas);
+
         return view('pelicula.index')->with('peliculas', $peliculas);
     }
 

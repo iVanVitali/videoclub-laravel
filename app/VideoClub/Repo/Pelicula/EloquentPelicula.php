@@ -5,8 +5,7 @@
  * Date: 9/4/17
  * Time: 17:08
  */
-
-    namespace VideoClub\Repo;
+    namespace VideoClub\Repo\Pelicula;
 
     use Illuminate\Database\Eloquent\Model;
     use Illuminate\Http\Request;

@@ -5,7 +5,7 @@
  * Date: 9/4/17
  * Time: 17:03
  */
-    namespace VideoClub\Repo;
+    namespace VideoClub\Repo\Pelicula;
 
     use Illuminate\Http\Request;
 
