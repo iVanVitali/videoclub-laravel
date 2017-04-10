@@ -34,7 +34,7 @@ class PeliculaController extends Controller
      */
     public function create()
     {
-        //
+        return view('pelicula.create');
     }
 
     /**
@@ -45,7 +45,9 @@ class PeliculaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->pelicula->agregarPelicula($request);
+
+        return redirect('peliculas');
     }
 
     /**

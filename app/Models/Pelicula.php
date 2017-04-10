@@ -39,7 +39,7 @@ class Pelicula extends Model
      */
     public function setTituloAttribute($value)
     {
-        $this->attributes['firstName'] = ucwords(strtolower($value));
+        $this->attributes['titulo'] = ucwords(strtolower($value));
     }
 
 }
