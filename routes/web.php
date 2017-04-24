@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('peliculas', 'PeliculaController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
