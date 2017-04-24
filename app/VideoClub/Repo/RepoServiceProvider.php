@@ -10,7 +10,9 @@
 
     use App\Models\Pelicula;
     use Illuminate\Support\ServiceProvider;
+    use VideoClub\Repo\Pelicula\CacheDecorator;
     use VideoClub\Repo\Pelicula\EloquentPelicula;
+    use VideoClub\Service\Cache\LaravelCache;
 
     class RepoServiceProvider extends ServiceProvider {
 
@@ -21,8 +23,16 @@
          */
         public function register() {
 
+            $app = $this->app;
+
             $this->app->bind('VideoClub\Repo\Pelicula\PeliculaInterface', function ($app) {
+
+                //$pelicula = new EloquentPelicula(new Pelicula);
+
+                //return new CacheDecorator($pelicula, new LaravelCache($app['cache'], 'peliculas', 10));
+
                 return new EloquentPelicula(new Pelicula);
+
             });
 
         }
